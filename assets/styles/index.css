@@ -110,8 +110,48 @@ header{
                         width: 24px;
                         height: 24px;
                     }
+
+                    &:nth-child(1){
+                        img{
+                            filter: var(--filter-gray-400);
+                        }
+                    }
+
+                    &:nth-child(2){
+                        img{
+                            filter: var(--filter-red);
+                        }
+                    }
+
+                    &:nth-child(3){
+                        img{
+                            filter: var(--filter-blue);
+                        }
+                    }
+
+                    &:nth-child(4){
+                        img{
+                            filter: var(--filter-yellow);
+                        }
+                    }
+
+                    &:nth-child(5){
+                        img{
+                            filter: var(--filter-blue);
+                        }
+                    }
+
+                    &:nth-child(6){
+                        img{
+                            filter: var(--filter-green);
+                        }
+                    }
                 }
             }
+        }
+
+        .seta{
+            animation: float 1s ease-in-out infinite;
         }
     }
 }
@@ -246,6 +286,22 @@ header{
                     height: 48px;
                 }
 
+                &:nth-child(1){
+                    img{
+                        filter: var(--filter-purple);
+                    }
+                }
+                &:nth-child(2){
+                    img{
+                        filter: var(--filter-yellow);
+                    }
+                }
+                &:nth-child(3){
+                    img{
+                        filter: var(--filter-green);
+                    }
+                }
+
                 .informacoes{
                     display: flex;
                     flex-direction: column;
@@ -307,6 +363,7 @@ header{
             display: flex;
             flex-direction: column;
             gap: 16px;
+
             li{
                 list-style: none;
 
@@ -319,6 +376,17 @@ header{
                     background-color: var(--gray-300);
                     border-radius: 8px;
                     text-decoration: none;
+                    transition: all .3s linear;
+                    border: 1px solid transparent;
+
+                    &:hover{
+                        padding-left: 40px;
+                        border: 1px solid var(--gray-500);
+
+                        .icone{
+                            filter: var(--filter-yellow);
+                        }
+                    }
                 }
 
                 .rede{
@@ -327,6 +395,17 @@ header{
                     justify-content: center;
                     gap: 12px;
                     color: var(--gray-500);
+                    font-weight: 500;
+
+                    img{
+                        filter: var(--filter-gray-400);
+                    }
+                }
+
+                .icone{
+                    width: 20px;
+                    height: 20px;
+                    filter: var(--filter-blue);
                 }
             }
         }
